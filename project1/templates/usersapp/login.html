@@ -1,0 +1,15 @@
+{% extends "usersapp/base.html" %}
+{% block body_block %}
+  <div class="jumbotron">
+    <h1>plz login</h1>
+    <!-- userlogin is the one we wriiten in settings file -->
+    <form action="{% url 'usersapp:userlogin' %}" method="post">
+      {% csrf_token %}
+      <label for="username">username:</label>
+      <input type="text" name="username" placeholder="Enter username">
+      <label for="password">password:</label>
+      <input type="password" name="password">
+      <input type="submit" value="login">
+    </form>
+  </div>
+{% endblock body_block %}

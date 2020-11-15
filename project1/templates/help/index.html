@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>help page</title>
+</head>
+<body>
+    hii there this is help page
+    
+    <h3>users information</h3>
+
+    <ul class="users">
+        user names are:
+        {% if att1 %}
+        
+            {% for att in att1%}
+
+                <li>
+                    <br>
+                    <ul>
+                        <li>{{att.first_name}}</li>
+                        <li>{{att.last_name}}</li>
+                        <li>{{att.e_mail}}</li>
+                    </ul>
+                    <br>
+                </li>
+            {%endfor%}
+
+        {% else %}
+            <p>couldnt find users</p>
+
+        {% endif %}
+    </ul>
+
+</body>
+</html>

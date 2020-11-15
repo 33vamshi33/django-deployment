@@ -1,0 +1,20 @@
+{
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "[django-html]": {
+
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": true,
+            "strings": true
+        }
+    },
+    "indentRainbow.includedLanguages": [
+
+    ],
+    "indentRainbow.indentSetter": {
+    "django-html":"html"
+    },
+    "python.pythonPath": "c:\\Users\\PVams\\virtu\\Scripts\\python.exe"
+}
